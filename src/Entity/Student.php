@@ -39,6 +39,7 @@ class Student
 
     /**
      * @ORM\Column(type="date")
+     * @Assert\LessThan("-18 years")
      */
     private $date_naissance;
 
