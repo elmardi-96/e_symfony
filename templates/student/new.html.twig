@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Student{% endblock %}
+
+{% block body %}
+
+    {# <h3>The author has the following errors</h3> #}
+    <ul>
+    {# {% if foo is defined %}
+    {% else %}
+        {% for error in errors %}
+            <li>{{ error.message }}</li>
+        {% endfor %}
+    {% endif %} #}
+    </ul>
+    <h1>Create new Student</h1>
+
+    {{ include('student/_form.html.twig') }}
+
+    <a href="{{ path('student_index') }}">back to list</a>
+{% endblock %}
